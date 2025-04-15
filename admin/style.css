@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-image: url('../images/userHome.png');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
+}
+/* Navbar Styles */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 2rem;
+background-color: #003d29;
+color: white;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #c3e6cb;
+}
+
+
+/* homepage*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+.request-card, .message-card {
+    font-size: 1.5rem;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.request-card h4, .message-card p, .request-card p {
+    margin: 0 0 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.btn-accept, .btn-delete {
+    background-color: #28a745;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: rgb(247, 28, 28)
+}
+
+.btn-accept:hover {
+    background-color: #28a745;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    width:100%;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
